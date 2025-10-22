@@ -1,0 +1,237 @@
+body {
+    font-family: Helvetica, sans-serif; /* Define la tipografía principal de la página */
+    margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+}
+
+.head {
+    background-color: #ad0000; /* Establece el color de fondo de la cabecera */
+    display: flex; /* Usa flexbox para organizar los elementos dentro de .head */
+    align-items: center; /* Centra verticalmente los elementos dentro de .head */
+    padding: 10px; /* Agrega un relleno de 10px alrededor de la cabecera */
+}
+
+.head .logo img {
+    margin-left: 50px; /* Agrega un margen izquierdo de 50px a la imagen */
+    width: 110px; /* Establece el ancho de la imagen */
+    height: 110px; /* Establece la altura de la imagen */
+}
+
+.head .menu {
+    display: flex; /* Usa flexbox para organizar los elementos dentro de .menu */
+    justify-content: flex-end; /* Alinea los elementos del menú hacia la derecha */
+    flex: 1; /* Hace que .menu ocupe todo el espacio disponible */
+}
+
+.head .menu a {
+    color: white; /* Establece el color de los enlaces en blanco */
+    font-weight: bold; /* Hace que el texto de los enlaces sea en negrita */
+    font-size: 24px; /* Establece el tamaño de la fuente de los enlaces */
+    padding: 14px 20px; /* Agrega relleno alrededor de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    text-align: center; /* Centra el texto dentro de los enlaces */
+    position: relative; /* Posiciona los enlaces de manera relativa */
+}
+
+.head .menu a:hover {
+    background-color: #ddd; /* Cambia el color de fondo a gris cuando el enlace es hover */
+    color: black; /* Cambia el color del texto a negro cuando el enlace es hover */
+}
+
+/* Submenus */
+.menu ul {
+    list-style-type: none; /* Elimina los puntos de lista */
+    padding: 0; /* Elimina el relleno */
+    margin: 0; /* Elimina el margen */
+}
+
+.menu > ul > li {
+    position: relative; /* Posiciona los elementos de la lista de manera relativa */
+    display: inline-block; /* Muestra los elementos de la lista en línea */
+    padding: 10px 20px; /* Agrega relleno a los elementos de la lista */
+}
+
+/* Estilo de los enlaces */
+.menu a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: black; /* Establece el color del texto a negro */
+    font-size: 16px; /* Establece el tamaño de la fuente de los enlaces */
+}
+
+/* Estilo para cuando el usuario pasa el puntero por encima del menú */
+.menu > ul > li:hover {
+    color: black; /* Cambia el color del texto a negro cuando el puntero está sobre el elemento */
+}
+
+/* Estilo del submenú */
+.submenu {
+    display: none; /* Oculta el submenú inicialmente */
+    position: absolute; /* Posiciona el submenú de manera absoluta */
+    top: 100%; /* Coloca el submenú justo debajo del elemento principal */
+    left: 50%; /* Centra el submenú horizontalmente */
+    background-color: #333; /* Establece un color de fondo oscuro para el submenú */
+    padding: 10px 0; /* Agrega relleno al submenú */
+    text-align: center; /* Centra el contenido del submenú */
+    transform: translateX(-50%); /* Ajusta el submenú para que quede perfectamente centrado */
+}
+
+.submenu li {
+    white-space: nowrap; /* Evita que los enlaces dentro del submenú se dividan en varias líneas */
+}
+
+/* Estilo de los enlaces dentro del submenú */
+.submenu a {
+    display: block; /* Hace que los enlaces del submenú ocupen toda la línea */
+    padding: 8px 20px; /* Agrega relleno a los enlaces del submenú */
+    color: white; /* Establece el color del texto en blanco */
+}
+
+
+/* FIN DEL SUBMENÚ */
+
+/* Estilo de las líneas */
+hr {
+    border: 0; /* Elimina el borde predeterminado */
+    border-top: 3px solid #333; /* Agrega un borde superior de 3px de grosor */
+    margin-left: 20%; /* Agrega un margen izquierdo de 20% */
+    width: 60%; /* Establece el ancho de la línea al 60% */
+    box-shadow: 0 0 10px rgba(169, 169, 169, 0.5); /* Difumina los bordes de la línea */
+}
+
+
+/* Footer */
+.footer {
+    background-color: #00001a; /* Establece un fondo oscuro para el pie de página */
+    color: white; /* Establece el color del texto en blanco */
+    text-align: center; /* Centra el texto dentro del pie de página */
+    padding: 20px 0; /* Agrega relleno arriba y abajo del pie de página */
+    clear: both; /* Elimina cualquier conflicto con elementos flotantes anteriores */
+}
+
+.footer .sponsors {
+    display: flex; /* Usa flexbox para organizar los patrocinadores */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si es necesario */
+    justify-content: center; /* Centra los elementos dentro de .sponsors */
+    gap: 10px; /* Agrega un espacio de 10px entre los elementos */
+}
+
+.footer .sponsors a img {
+    width: 80px; /* Establece el ancho de las imágenes de los patrocinadores */
+    height: 50px; /* Establece la altura de las imágenes de los patrocinadores */
+    margin: 5px; /* Agrega un margen de 5px alrededor de las imágenes */
+}
+
+.footer .cajaPoliticas {
+    display: flex; /* Usa flexbox para organizar los enlaces de políticas */
+    justify-content: flex-start; /* Alinea los enlaces hacia la izquierda */
+    gap: 20px; /* Agrega un espacio de 20px entre los enlaces */
+    margin: 60px 0; /* Agrega un margen de 60px arriba y abajo */
+    margin-left: 350px; /* Agrega un margen izquierdo de 350px */
+}
+
+.footer .cajaPoliticas a {
+    display: flex; /* Usa flexbox para organizar los enlaces */
+    color: white; /* Establece el color de los enlaces en blanco */
+    font-size: 18px; /* Establece el tamaño de la fuente de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-weight: bold; /* Hace que el texto de los enlaces sea en negrita */
+}
+
+.footer .cajaPoliticas a:hover {
+    text-decoration: underline; /* Subraya los enlaces cuando el puntero pasa sobre ellos */
+}
+
+#logodebajo {
+    margin: 20px 0; /* Agrega un margen de 20px arriba y abajo */
+}
+
+#logodebajo img {
+    width: 90px; /* Establece el ancho de la imagen del logotipo */
+    height: 90px; /* Establece la altura de la imagen del logotipo */
+}
+
+.minifirma > p {
+    color: #555; /* Establece el color del texto de la firma en gris */
+    font-size: 15px; /* Establece el tamaño de la fuente de la firma */
+}
+
+#cajaSociales {
+    display: flex; /* Usa flexbox para organizar los enlaces de redes sociales */
+    justify-content: flex-end; /* Alinea los enlaces hacia la derecha */
+    gap: 10px; /* Agrega un espacio de 10px entre los enlaces */
+    margin-top: -85px; /* Establece un margen negativo para mover los enlaces hacia arriba */
+    margin-right: 500px; /* Agrega un margen de 500px a la derecha */
+}
+
+#cajaSociales a {
+    display: inline-block; /* Muestra los enlaces de manera en línea */
+    /* display: flex; */ /* Comentado, no utilizado */
+}
+
+#cajaSociales img {
+    display: flex; /* Usa flexbox para mostrar las imágenes de las redes sociales */
+    width: 28px; /* Establece el ancho de las imágenes de las redes sociales */
+    height: 28px; /* Establece la altura de las imágenes de las redes sociales */
+    margin: 0 5px; /* Agrega un margen de 5px a los lados de las imágenes */
+    vertical-align: middle; /* Alinea verticalmente las imágenes con el texto */
+    background-color: white; /* Establece un fondo blanco para las imágenes */
+}
+
+/*//////////////////////////////*/
+/* Estilo del contenedor de contenido principal */
+.content {
+    display: flex; /* Usa flexbox para organizar los elementos dentro del contenedor */
+    padding: 20px; /* Agrega relleno alrededor del contenedor */
+}
+
+/* Bloque Lateral Izquierdo (contenido principal) */
+.left-content {
+    flex: 1; /* Hace que el bloque ocupe todo el espacio disponible */
+    padding: 10px; /* Agrega relleno dentro del bloque */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil alrededor del bloque */
+}
+
+/* Estilos para el contenedor que alinea resumentexto y pista */
+.contenedor-resumen-pista {
+    display: flex; /* Usa flexbox para organizar los elementos dentro del contenedor */
+    margin-top: -30px; /* Establece un margen negativo para mover el contenedor hacia arriba */
+    gap: 50px; /* Agrega un espacio de 50px entre los elementos */
+}
+
+/* Estilo para la sección resumentexto */
+.resumentexto {
+    margin-top: 45px; /* Establece un margen superior de 45px */
+    margin-left: 90px; /* Agrega un margen izquierdo de 90px */
+    width: 50%; /* Establece el ancho del bloque al 50% */
+    padding-left: 15px; /* Agrega relleno a la izquierda */
+    padding-right: 15px; /* Agrega relleno a la derecha */
+    /* border: 1px solid rgb(37, 37, 37); */ /* Comentado, no se utiliza borde */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra difusa alrededor del bloque */
+    border-radius: 10px; /* Redondea las esquinas del bloque */
+}
+
+/* Estilo del texto dentro de resumentexto */
+.texto1 {
+    font-size: 20px; /* Establece el tamaño de la fuente */
+    font-family: Helvetica, sans-serif; /* Establece la tipografía */
+}
+
+/* Estilo de las imágenes dentro de la sección pista */
+.pista img {
+    display: flex; /* Usa flexbox para mostrar las imágenes */
+    margin-top: 45px; /* Establece un margen superior de 45px */
+    width: 650px; /* Establece el ancho de las imágenes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra difusa alrededor de las imágenes */
+    border-radius: 10px; /* Redondea las esquinas de las imágenes */
+}
+
+/* Estilo para la imagen con id imagen */
+#imagen {
+    height: 530px; /* Establece la altura de la imagen */
+}
+
+/* Estilo para el enlace con id enlace */
+#enlace {
+    color: #00001a; /* Establece el color del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-weight: bold; /* Hace que el texto del enlace sea en negrita */
+}

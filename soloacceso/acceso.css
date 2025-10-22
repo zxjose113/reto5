@@ -1,0 +1,288 @@
+body {
+    font-family: Helvetica, sans-serif; /* Define la tipografía del cuerpo */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+.head {
+    background-color: #ad0000; /* Fondo rojo para el encabezado */
+    display: flex; /* Usa flexbox para la disposición de los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px; /* Espaciado alrededor del encabezado */
+}
+
+.head .logo img {
+    margin-left: 50px; /* Espaciado a la izquierda de la imagen */
+    width: 110px; /* Define el ancho de la imagen */
+    height: 110px; /* Define la altura de la imagen */
+}
+
+.head .menu {
+    display: flex; /* Usa flexbox para organizar los elementos del menú */
+    justify-content: flex-end; /* Alinea los elementos del menú a la derecha */
+    flex: 1; /* Hace que el menú ocupe el espacio disponible */
+}
+
+.head .menu a {
+    color: white; /* Color blanco para los enlaces */
+    font-weight: bold; /* Pone en negrita los enlaces */
+    font-size: 24px; /* Tamaño de fuente de los enlaces */
+    padding: 14px 20px; /* Espaciado dentro de los enlaces */
+    text-decoration: none; /* Elimina el subrayado en los enlaces */
+    text-align: center; /* Centra el texto de los enlaces */
+    position: relative; /* Posiciona los enlaces de manera relativa */
+}
+
+.head .menu a:hover {
+    background-color: #ddd; /* Cambia el fondo cuando el puntero pasa por encima */
+    color: black; /* Cambia el color del texto a negro cuando pasa el puntero */
+}
+
+/* Estilo general de los menús */
+.menu ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Estilo de los elementos de menú */
+.menu > ul > li {
+    position: relative; /* Necesario para que el submenú se posicione correctamente */
+    display: inline-block; /* Muestra los elementos de menú en línea */
+    padding: 10px 20px; /* Espaciado dentro de los elementos de menú */
+}
+
+/* Estilo de los enlaces en el menú */
+.menu a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: black; /* Color de los enlaces */
+    font-size: 16px; /* Tamaño de fuente de los enlaces */
+}
+
+/* Estilo para cuando el usuario pasa el puntero por encima del menú */
+.menu > ul > li:hover {
+    color: black; /* Cambia el color de los enlaces al pasar el puntero */
+}
+
+/* Estilo del submenú */
+.submenu {
+    display: none; /* Inicialmente oculto */
+    position: absolute; /* Posiciona el submenú de manera absoluta */
+    top: 100%; /* Coloca el submenú justo debajo del menú principal */
+    left: 50%; /* Centra el submenú horizontalmente */
+    background-color: #333; /* Fondo gris oscuro para el submenú */
+    padding: 10px 0; /* Espaciado interno del submenú */
+    text-align: center; /* Centra el contenido dentro del submenú */
+    transform: translateX(-50%); /* Ajusta el submenú para que quede centrado */
+}
+
+.submenu li {
+    white-space: nowrap; /* Evita que los enlaces se dividan en varias líneas */
+}
+
+/* Estilo de los enlaces dentro del submenú */
+.submenu a {
+    display: block; /* Hace que los enlaces del submenú ocupen toda la línea */
+    padding: 8px 20px; /* Espaciado dentro de los enlaces del submenú */
+    color: white; /* Color blanco para los enlaces del submenú */
+}
+
+
+/* Estilo de las líneas */
+hr {
+    border: 0; /* Elimina el borde predeterminado */
+    border-top: 3px solid #333; /* Añade una línea superior gris */
+    width: 60%; /* Define el ancho de la línea */
+    box-shadow: 0 0 10px rgba(169, 169, 169, 0.5); /* Agrega una sombra difusa */
+}
+
+#username {
+    text-transform: uppercase;
+}
+
+/* Estilo del pie de página */
+.footer {
+    background-color: #00001a; /* Fondo oscuro para el pie de página */
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Centra el texto en el pie de página */
+    padding: 20px 0; /* Espaciado vertical */
+    clear: both; /* Limpia los flotantes */
+}
+
+/* Estilo para los patrocinadores en el pie de página */
+.footer .sponsors {
+    display: flex; /* Usa flexbox para los patrocinadores */
+    flex-wrap: wrap; /* Permite que los patrocinadores se ajusten en varias filas */
+    justify-content: center; /* Centra los patrocinadores */
+    gap: 10px; /* Espacio entre los patrocinadores */
+}
+
+/* Estilo para las imágenes de los patrocinadores */
+.footer .sponsors a img {
+    width: 80px; /* Define el ancho de las imágenes */
+    height: 50px; /* Define la altura de las imágenes */
+    margin: 5px; /* Espaciado alrededor de las imágenes */
+}
+
+/* Estilo de la caja de políticas en el pie de página */
+.footer .cajaPoliticas {
+    display: flex; /* Usa flexbox para organizar las políticas */
+    justify-content: flex-start; /* Alinea las políticas a la izquierda */
+    gap: 20px; /* Espacio entre las políticas */
+    margin: 60px 0; /* Espaciado superior e inferior */
+    margin-left: 350px; /* Desplaza la caja de políticas hacia la izquierda */
+}
+
+/* Estilo de los enlaces de políticas */
+.footer .cajaPoliticas a {
+    display: flex; /* Muestra los enlaces como elementos flexibles */
+    color: white; /* Color de texto blanco */
+    font-size: 18px; /* Tamaño de fuente de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-weight: bold; /* Pone los enlaces en negrita */
+}
+
+/* Estilo para los enlaces de políticas al pasar el puntero */
+.footer .cajaPoliticas a:hover {
+    text-decoration: underline; /* Subraya los enlaces al pasar el puntero */
+}
+
+/* Estilo para el logo en la parte inferior */
+#logodebajo {
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+#logodebajo img {
+    width: 90px; /* Ancho del logo */
+    height: 90px; /* Altura del logo */
+}
+
+/* Estilo para la firma pequeña */
+.minifirma > p {
+    color: #555; /* Color de texto gris */
+    font-size: 15px; /* Tamaño de fuente */
+}
+
+/* Estilo para los enlaces de redes sociales */
+#cajaSociales {
+    display: flex; /* Usa flexbox para organizar los enlaces de redes sociales */
+    justify-content: flex-end; /* Alinea los enlaces a la derecha */
+    gap: 10px; /* Espacio entre los enlaces */
+    margin-top: -85px; /* Desplaza los enlaces hacia arriba */
+    margin-right: 500px; /* Desplaza los enlaces hacia la derecha */
+}
+
+#cajaSociales a {
+    display: inline-block; /* Muestra los enlaces como elementos en línea */
+}
+
+/* Estilo para las imágenes de redes sociales */
+#cajaSociales img {
+    display: flex; /* Muestra las imágenes como elementos flexibles */
+    width: 28px; /* Ancho de las imágenes */
+    height: 28px; /* Altura de las imágenes */
+    margin: 0 5px; /* Espaciado entre las imágenes */
+    vertical-align: middle; /* Alinea las imágenes verticalmente */
+    background-color: white; /* Fondo blanco para las imágenes */
+}
+
+/*/////////////////////////////////////////////////////*/
+.center-content {
+    height: 500px;
+    display: flex; /* Usa flexbox para alinear los elementos */
+    justify-content: center; /* Centra el formulario horizontalmente */
+    padding: 20px; /* Agrega espacio alrededor del formulario */
+}
+.form-container-acceso {
+    width: 100%; /* Hace que el contenedor ocupe todo el ancho disponible */
+    max-width: 500px; /* Limita el ancho máximo del formulario a 500px */
+    background-color: #f8f8f8; /* Fondo gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor del formulario */
+    padding: 30px; /* Espaciado interno alrededor del formulario */
+}
+/*/////////////////////////////////////////////////////*/
+/* Centra el contenido en pantalla */
+.center-content {
+    display: flex; /* Activa el modelo flexbox */
+    justify-content: center; /* Centra el formulario horizontalmente */
+    align-items: center; /* Centra el formulario verticalmente */
+    padding: 20px; /* Añade un espacio de 20 píxeles alrededor */
+}
+
+/* Estilo del contenedor principal del formulario de acceso */
+.form-container-acceso {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor padre */
+    max-width: 400px; /* Limita el ancho máximo a 400 píxeles */
+    background-color: #f8f8f8; /* Color de fondo gris claro */
+    border-radius: 8px; /* Bordes redondeados de 8 píxeles */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+    padding: 30px; /* Espacio interno de 30 píxeles */
+    text-align: center; /* Centra el texto y otros elementos en el formulario */
+}
+
+/* Estilo para el título del formulario */
+.form-container-acceso h1 {
+    font-size: 24px; /* Tamaño de fuente del título */
+    color: #333; /* Color gris oscuro */
+    margin-bottom: 20px; /* Espacio inferior de 20 píxeles */
+}
+
+/* Estilos para cada campo (usuario y contraseña) */
+#elusuario,
+#lacontrasena {
+    margin-bottom: 20px; /* Añade espacio entre los campos */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilo para las etiquetas (label) de cada campo */
+label {
+    font-weight: bold; /* Hace que el texto sea negrita */
+    color: #555; /* Color gris intermedio */
+    display: block; /* Hace que la etiqueta ocupe una línea completa */
+    margin-bottom: 5px; /* Espacio inferior entre la etiqueta y el campo */
+}
+
+/* Estilo para los campos de texto y contraseña */
+input[type="text"],
+input[type="password"] {
+    width: 90%; /* Ocupa el 90% del contenedor */
+    padding: 10px; /* Añade espacio interno de 10 píxeles */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados de 5 píxeles */
+    font-size: 16px; /* Tamaño de fuente */
+    margin-bottom: 10px; /* Espacio inferior entre el campo y otros elementos */
+}
+
+/* Contenedor para el campo de contraseña y el icono */
+#inputimagen {
+    position: relative; /* Posiciona el icono dentro de este contenedor */
+}
+
+/* Estilo para el icono de visibilidad de la contraseña */
+#imagen {
+    position: absolute; /* Coloca el icono en una posición absoluta dentro del contenedor */
+    right: 30px; /* Se posiciona a 30 píxeles del borde derecho */
+    top: 40%; /* Coloca el icono al 40% desde la parte superior del contenedor */
+    transform: translateY(-50%); /* Centra verticalmente el icono */
+    width: 40px; /* Ancho del icono */
+    height: 30px; /* Altura del icono */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar interactividad */
+}
+
+/* Estilo para el botón de inicio de sesión */
+#iniciosesion button {
+    background-color: #cc0000; /* Color de fondo rojo */
+    color: white; /* Color del texto en blanco */
+    font-size: 16px; /* Tamaño de fuente */
+    padding: 10px; /* Espacio interno de 10 píxeles */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados de 5 píxeles */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar interactividad */
+    width: 90%; /* Ancho del botón */
+    margin-left: -15px;
+}
+
+/* Estilo para el botón cuando se pasa el cursor por encima */
+#iniciosesion button:hover {
+    background-color: #800000; /* Cambia el color de fondo a un tono rojo más oscuro */
+}

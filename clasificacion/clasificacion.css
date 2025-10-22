@@ -1,0 +1,23 @@
+.tabla-redondeada {
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 5px 30px 30px rgba(0, 0, 0, 0.2); /* Sombra */
+    border-radius: 10px; /* Radio de borde uniforme para toda la tabla */
+    overflow: hidden; /* Importante para que el border-radius funcione en las celdas */
+}
+
+.tabla-redondeada th:first-child { /* Esquina superior izquierda */
+    border-top-left-radius: 10px;
+}
+
+.tabla-redondeada th:last-child { /* Esquina superior derecha */
+    border-top-right-radius: 10px;
+}
+
+.tabla-redondeada tr:last-child td:first-child { /* Esquina inferior izquierda */
+    border-bottom-left-radius: 10px;
+}
+
+.tabla-redondeada tr:last-child td:last-child { /* Esquina inferior derecha */
+    border-bottom-right-radius: 10px;
+}
