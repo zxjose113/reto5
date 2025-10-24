@@ -43,12 +43,12 @@ for (let i = 0; i < menuItems.length; i++) {
 
 //CARRUSEL DE IMAGENES
 // Repetimos la función "cambiarFoto" cada 2 segundos
-setInterval("cambiarFoto()", 3000);  // 2 segundos de intervalo
+setInterval("cambiarFoto()", 2000);  
 
 function cambiarFoto() {
     let arraytitulo=["Red Bull en la pista", "Desafio bajo la lluvia", "Celebración en el podio", "Mercedes en acción","Duelo en el circuito"
         ,"Museo Guggenheim","Parque Etxebarri", "Paseo del Arenal", "Plaza Moyúa","Puente Zubizuri"]
-    let arrayimagenes = ["1.jpg", "2.jpg","3.jpg", "4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg"]
+    let arrayimagenes = ["/reto5/imagenes/carrusel/1.jpg", "/reto5/imagenes/carrusel/2.jpg","/reto5/imagenes/carrusel/3.jpg", "/reto5/imagenes/carrusel/4.jpg","/reto5/imagenes/carrusel/5.jpg","/reto5/imagenes/carrusel/6.jpg","/reto5/imagenes/carrusel/7.jpg","/reto5/imagenes/carrusel/8.jpg","/reto5/imagenes/carrusel/9.jpg","/reto5/imagenes/carrusel/10.jpg"]
     
     // Calculo de un número aleatorio entre 0 y 10 (inclusive)
     let numAleatorio = Math.floor(Math.random() * 10);  // Usamos .length para mayor flexibilidad
@@ -57,7 +57,7 @@ function cambiarFoto() {
     let titulos = document.getElementById("Titulos");
     let imagen = document.getElementById("imagenescarrusel");
     titulos.innerHTML=arraytitulo[numAleatorio];
-    imagen.src = "imagenes/carrusel/" + arrayimagenes[numAleatorio];
+    imagen.src = arrayimagenes[numAleatorio];
 }
 
 
